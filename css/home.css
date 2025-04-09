@@ -1,0 +1,106 @@
+ /* Estilos da Home */
+ .hero-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, var(--gray-900), var(--gray-800));
+    border-bottom: 1px solid var(--gray-700);
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: var(--gray-100);
+    margin-bottom: 1rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    color: var(--gray-300);
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.btn-primary {
+    background-color: var(--green-500);
+    color: var(--white);
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--green-300);
+    transform: translateY(-3px);
+}
+
+.features {
+    padding: 3rem 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background-color: var(--gray-800);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: var(--green-300);
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    color: var(--gray-100);
+    margin-bottom: 0.75rem;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: var(--gray-400);
+}
+
+/* Animação de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section, .feature-card {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .features {
+        padding: 2rem 5%;
+    }
+}

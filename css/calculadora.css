@@ -1,0 +1,101 @@
+.calculator-container {
+    background-color: var(--gray-800);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.calculator-container h1 {
+    font-size: 1.75rem;
+    color: var(--gray-100);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.disclaimer {
+    font-size: 0.875rem;
+    color: var(--gray-400);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    color: var(--gray-100);
+    margin-bottom: 0.5rem;
+    font-weight: var(--font-weight-medium);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--gray-600);
+    border-radius: 8px;
+    background-color: var(--gray-700);
+    color: var(--gray-100);
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    border-color: var(--green-500);
+    outline: none;
+}
+
+.btn-calculate {
+    background-color: var(--green-500);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.btn-calculate:hover {
+    background-color: var(--green-300);
+}
+
+.result {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.result p {
+    color: var(--gray-100);
+    font-size: 1.25rem;
+}
+
+.result .media {
+    font-weight: var(--font-weight-bold);
+}
+
+.result .approved {
+    color: var(--green-300);
+}
+
+.result .rejected {
+    color: var(--red-500);
+}
+
+@media (max-width: 576px) {
+    .calculator-container {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .calculator-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .disclaimer {
+        font-size: 0.75rem;
+    }
+}
