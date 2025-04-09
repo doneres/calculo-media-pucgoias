@@ -1,3 +1,4 @@
+/* Variáveis globais */
 :root {
     /* Cores */
     --white: #fff;
@@ -14,18 +15,20 @@
 
     /* Tipografia */
     --font-primary: 'Inter', sans-serif;
-    --font-size-base: 1rem;
+    --font-size-base: 1rem; /* 16px */
     --font-weight-regular: 400;
-    --font-weight-medium: 500; 
-    --font-weight-bold: 700; 
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
 }
+
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos globais */
+/* Base */
 html {
     font-size: var(--font-size-base);
     scroll-behavior: smooth;
@@ -35,17 +38,20 @@ body {
     background-color: var(--gray-900);
     color: var(--gray-300);
     font-family: var(--font-primary);
-    font-weight: var(--font-weight-regular);
     font-size: var(--font-size-base);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: 1.6;
 }
 
-input, textarea, button {
+/* Elementos */
+input,
+textarea,
+button {
     font-family: var(--font-primary);
-    font-weight: var(--font-weight-regular);
     font-size: var(--font-size-base);
+    font-weight: var(--font-weight-regular);
 }
 
 main {
@@ -65,9 +71,8 @@ main {
 /* Responsividade */
 @media (max-width: 768px) {
     html {
-        font-size: 0.875rem;
+        font-size: 0.875rem; /* 14px */
     }
-
     main {
         padding: 5% 5% 10% 5%;
     }
@@ -76,6 +81,5 @@ main {
 @media (min-width: 1440px) {
     main {
         padding: 0;
-        
     }
 }
